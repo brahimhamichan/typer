@@ -1,0 +1,42 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "typer",
+  "title": "Typer",
+  "description": "Types pasted text into the focused field as real keystrokes. Press Escape to cancel.",
+  "icon": "icon.png",
+  "author": "brahimhamichan",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "type-text",
+      "title": "Typer",
+      "subtitle": "Type text as keystrokes",
+      "description": "Paste text, press Enter, and it is typed into the previously focused field.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.83.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.3.0",
+    "typescript": "^5.4.0"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "build:helper": "swiftc -O helper/typer.swift -o /tmp/typer-arm -target arm64-apple-macos12 && swiftc -O helper/typer.swift -o /tmp/typer-x86 -target x86_64-apple-macos12 && lipo -create /tmp/typer-arm /tmp/typer-x86 -output assets/typer-helper",
+    "lint": "tsc --noEmit"
+  },
+  "categories": [
+    "Productivity",
+    "Developer Tools"
+  ],
+  "keywords": [
+    "type",
+    "keystrokes",
+    "paste",
+    "autotype"
+  ]
+}
