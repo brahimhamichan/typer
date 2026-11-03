@@ -19,7 +19,7 @@ export default function Command() {
   return (
     <Form actions={<ActionPanel><Action.SubmitForm title="Type It" onSubmit={typeText} /></ActionPanel>}>
       <Form.TextArea id="text" title="Text" placeholder="Paste text, then press ⌘↵ (Esc cancels while typing)" autoFocus />
-      <Form.Dropdown id="speed" title="Speed" defaultValue="0.02" storeValue>
+      <Form.Dropdown id="speed" title="Speed" defaultValue="0.06" storeValue>
         <Form.Dropdown.Item value="0.06" title="Human" />
         <Form.Dropdown.Item value="0.02" title="Fast" />
         <Form.Dropdown.Item value="0.005" title="Instant" />

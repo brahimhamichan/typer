@@ -28,8 +28,8 @@ Some fields block paste (remote desktops, VMs, web consoles, password prompts, k
 
 | Speed | Delay per key |
 |---|---|
-| Human | ~60–90 ms |
-| Fast (default) | ~20–30 ms |
+| Human (default) | ~60–90 ms |
+| Fast | ~20–30 ms |
 | Instant | ~5 ms |
 
 Newlines press Return and tabs press Tab. Unicode and emoji are supported.
